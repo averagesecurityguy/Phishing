@@ -10,6 +10,7 @@
 import json
 import smtplib
 import email.mime.text
+import email.utils
 
 
 MX = ''  # Hostname for target MX server.
@@ -69,6 +70,7 @@ def build_message(template, subj, url, first, vid):
     html = template.format(first, link)
     msg = email.mime.text.MIMEText(html, 'html')
     msg['Subject'] = subj
+    msg['Message-ID'] = email.utils.make_msgid()
 
     return msg
 
