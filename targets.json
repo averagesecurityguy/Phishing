@@ -1,0 +1,6 @@
+{"targets":
+  [
+    {"first":"John", "campaign":"CAMP1", "email":"john@target_company.com", "id":"234567"},
+    {"first":"Jane", "campaign":"CAMP2", "email":"jane@target_company.com", "id":"765432"}
+  ]
+}
